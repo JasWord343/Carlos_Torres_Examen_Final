@@ -11,7 +11,13 @@ USE BdExamen3;
 
 # Création de la table tblUsers pour la connexion ICI
 
-
+CREATE TABLE tblUsers
+(
+    noUser SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    fonction VARCHAR(25) NOT NULL
+);
 
 
 
